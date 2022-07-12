@@ -24,6 +24,7 @@ echo "Installing essential brews...";
 # Install the essential brews
 brew install git
 brew install node
+brew install npm
 brew install yarn
 brew install vim
 
