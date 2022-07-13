@@ -1,53 +1,38 @@
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
 [user]
-	name = Tommi Saarikangas
-	email = tommi.saarikangas@reaktor.com
+  name = Tommi Saarikangas
+  email = tommi.saarikangas@reaktor.com
 [push]
-	default = simple
+  default = simple
 [pull]
-	rebase = true
+  rebase = true
 [core]
-	editor = vim
-	excludesfile = /Users/tommis/.gitignore_global
+  editor = vim
+  excludesfile = /Users/tommis/.gitignore_global
 [color]
-	branch = auto
-    diff = auto
-    status = auto
+  branch = auto
+  diff = auto
+  status = auto
 [alias]
-    a = add --all
-    #############
-    b = branch
-    bs = branch --sort=-committerdate
-    #############
-    c = commit
-    cm = commit -m
-    #############
-    d = diff
-    dc = diff --cached
-    ############
-    l = log --oneline
-    lg = log --oneline --graph --decorate
-    #############
-    m = merge
-    #############
-    o = checkout
-    #############
-    ps = push
-    #############
-    fpush = push --force-with-lease
-    #############
-    pl = pull
-    #############
-    s = status
-    sb = status -s -b
+  a = add --all
+  b = branch
+  bs = branch --sort=-committerdate
+  c = commit
+  cm = commit -m
+  d = diff
+  dc = diff --cached
+  l = log --oneline
+  lg = log --oneline --graph --decorate
+  o = checkout
+  ps = push
+  fpush = push --force-with-lease
+  pl = pull
+  s = status
+  sb = status -s -b
 [credential]
-	helper = osxkeychain
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  helper = osxkeychain
+[fetch]
+  prune = true
