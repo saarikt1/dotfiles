@@ -5,9 +5,6 @@
 # Apps to install without a cask:
 # – Xcode
 
-# Abort on error
-set -e
-
 echo "Checking if Homebrew is already installed...";
 
 # Checks if Homebrew is installed
@@ -15,6 +12,9 @@ echo "Checking if Homebrew is already installed...";
 if test ! $(which brew); then
   echo "Installing Homebrew...";
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo "Adding Homebrew to PATH..."
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/tommis/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 else
   echo "Homebrew is already installed...";
 fi
