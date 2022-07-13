@@ -24,9 +24,6 @@ nmap <Leader>/ :Ag<Space>
 nmap <Leader>H :Helptags!<CR>
 nmap <Leader>: :History:<CR>
 
-" Change leader key for emmet. Still needs to be followed by ,
-let g:user_emmet_leader_key=','
-
 " Sets relative line numbering
 :set number relativenumber
 
@@ -53,7 +50,7 @@ set termguicolors
 colorscheme gruvbox
 
 " For plug-ins to load correctly.
-filetype plugin on
+filetype plugin indent on
 
 " Allow hidden buffers
 set hidden
@@ -76,7 +73,6 @@ set wildignore+=**/node_modules/**
 set wildignore+=**/build/**
 set wildignore+=**/coverage/**
 
-filetype plugin indent on
 
 " show existing tab with 2 spaces width
 set tabstop=2
@@ -102,13 +98,12 @@ set autoread
 if &history < 1000
   set history=1000
 endif
- 
+
 " Fixes common backspace problems
 set backspace=indent,eol,start
 
 " Speed up scrolling in Vim
 set ttyfast
-
 set scroll=5
 
 " Show statusline
@@ -133,7 +128,7 @@ nnoremap <silent> <Esc><Esc> :let @/=""<CR>
 " Set the timeout vim waits for exmple after esc. Fixes the delay issue when changing the cursor between different modes.
 set ttimeoutlen=5
 
-" Enables ctags?
+" Enables ctags
 set tags=tags
 
 " Change cursor style in different modes
