@@ -28,6 +28,7 @@ brew install npm
 brew install yarn
 brew install vim
 brew install tig
+brew install thefuck
 
 echo "Installing essential casks...";
 

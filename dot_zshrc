@@ -8,9 +8,15 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=()
 
 source $ZSH/oh-my-zsh.sh
+
+# Auto updates will cause the ~/.oh-my-zsh directory to drift out of sync with chezmoi's source state. To update Oh My Zsh and its plugins, refresh the downloaded archives. Read more: https://www.chezmoi.io/user-guide/include-files-from-elsewhere/#include-a-subdirectory-from-a-url
+DISABLE_AUTO_UPDATE="true"
+
+# Sets an alias for thefuck: https://github.com/nvbn/thefuck
+eval $(thefuck --alias)
 
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
