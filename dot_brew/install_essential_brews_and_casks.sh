@@ -29,6 +29,7 @@ brew install yarn
 brew install vim
 brew install tig
 brew install thefuck
+brew install fzf
 
 echo "Installing essential casks...";
 
