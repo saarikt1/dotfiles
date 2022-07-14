@@ -27,6 +27,7 @@ brew install node
 brew install npm
 brew install yarn
 brew install vim
+brew install tig
 
 echo "Installing essential casks...";
 
