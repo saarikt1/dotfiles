@@ -1,0 +1,4 @@
+[".vim/pack/colors/start/everforest"]
+    type = "git-repo"
+    url = "https://github.com/sainnhe/everforest.git"
+    refreshPeriod = "168h"
