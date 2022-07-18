@@ -26,7 +26,7 @@ yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^Logi Options$" manage=off
-yabai -m rule --add app="^Stickies$" manage=off
+yabai -m rule --add app="^Stickies$" layer=above manage=off
 
 # killall limelight &> /dev/null
 # limelight &> /dev/null &
