@@ -1,0 +1,11 @@
+## rotate tree 90
+hyper - d : yabai -m space --rotate 90
+
+## toggle window fullscreen zoom
+hyper - f : yabai -m window --toggle zoom-fullscreen
+
+# focus window in direction of focused window (options: north, east, south, west)
+hyper - k : yabai -m window --focus north
+hyper - l : yabai -m window --focus east
+hyper - j : yabai -m window --focus south
+hyper - h : yabai -m window --focus west

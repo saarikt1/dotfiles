@@ -30,8 +30,7 @@
   ps = push
   fpush = push --force-with-lease
   pl = pull
-  s = status
-  sb = status -s -b
+  s = status -s -b
 [credential]
   helper = osxkeychain
 [fetch]

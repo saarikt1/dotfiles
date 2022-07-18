@@ -30,6 +30,8 @@ brew install vim
 brew install tig
 brew install thefuck
 brew install fzf
+brew install koekeishiya/formulae/yabai
+brew install koekeishiya/formulae/skhd
 
 echo "Installing essential casks...";
 
