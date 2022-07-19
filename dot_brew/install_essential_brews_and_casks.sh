@@ -45,6 +45,7 @@ brew install --cask spotify
 brew install --cask visual-studio-code
 brew install --cask docker
 brew install --cask karabiner-elements
+brew install --cask 1password
 
 # Update and Upgrade
 echo "Updating and upgrading Homebrew..."; echo;
