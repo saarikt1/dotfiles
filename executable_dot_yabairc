@@ -29,6 +29,7 @@ yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^Logi Options$" manage=off
 yabai -m rule --add app="^Stickies$" layer=above manage=off
 yabai -m rule --add app="^Reminders$" layer=above manage=off
+yabai -m rule --add app="^Installer$" layer=above manage=off
 
 # killall limelight &> /dev/null
 # limelight &> /dev/null &
