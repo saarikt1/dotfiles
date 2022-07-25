@@ -64,6 +64,7 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Set a faster key repeat
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
+defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Show filename extensions by default
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
