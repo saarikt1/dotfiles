@@ -1,5 +1,18 @@
 #!/usr/bin/env sh
 
+yabai -m rule --add app="^System Preferences$" sticky=on layer=above manage=off
+yabai -m rule --add app="^1Password$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Karabiner-Elements$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Disk Utility$" sticky=on layer=above manage=off
+yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Spotify$" manage=off
+yabai -m rule --add app="^Logi Options$" manage=off
+yabai -m rule --add app="^Stickies$" layer=above manage=off
+yabai -m rule --add app="^Reminders$" layer=above manage=off
+yabai -m rule --add app="^Installer$" layer=above manage=off
+
 yabai -m config window_topmost off
 yabai -m config window_opacity off
 yabai -m config active_window_opacity 1.0
@@ -17,21 +30,5 @@ yabai -m config bottom_padding 5
 yabai -m config left_padding 5
 yabai -m config right_padding 5
 yabai -m config window_gap 5
-
-yabai -m rule --add app="^System Preferences$" sticky=on layer=above manage=off
-yabai -m rule --add app="^1Password$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Karabiner-Elements$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Disk Utility$" sticky=on layer=above manage=off
-yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Spotify$" manage=off
-yabai -m rule --add app="^Logi Options$" manage=off
-yabai -m rule --add app="^Stickies$" layer=above manage=off
-yabai -m rule --add app="^Reminders$" layer=above manage=off
-yabai -m rule --add app="^Installer$" layer=above manage=off
-
-# killall limelight &> /dev/null
-# limelight &> /dev/null &
 
 echo "Yabai configuration loaded..."
