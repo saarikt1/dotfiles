@@ -37,13 +37,9 @@ echo "Installing essential casks...";
 
 # Install essential casks
 brew install --cask iterm2
-brew install --cask firefox
 brew install --cask figma
 brew install --cask google-chrome
 brew install --cask slack
-brew install --cask spotify
-brew install --cask visual-studio-code
-brew install --cask docker
 brew install --cask karabiner-elements
 brew install --cask 1password
 
